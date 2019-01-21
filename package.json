@@ -1,6 +1,10 @@
 {
     "title": "Stylish Portfolio",
+<<<<<<< HEAD
     "name": "reinforcement-learning",
+=======
+    "name": "startbootstrap-stylish-portfolio",
+>>>>>>> dcc39da83f304605287d2a3f51b79c230fa0e501
     "version": "5.0.1",
     "description": "A stylish portfolio HTML template built with Bootstrap",
     "keywords": [
@@ -11,8 +15,25 @@
         "theme",
         "template"
     ],
+<<<<<<< HEAD
     "license": "MIT",
     "author": "Start Bootstrap",
+=======
+    "homepage": "https://startbootstrap.com/template-overviews/stylish-portfolio",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio.git"
+    },
+>>>>>>> dcc39da83f304605287d2a3f51b79c230fa0e501
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.3.1",
         "bootstrap": "4.1.3",
