@@ -42,7 +42,8 @@
         <a class="js-scroll-trigger" href="#important">Quésaco l’apprentissage par renforcement?</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#benefices">Différence entre apprentissage par renforcement et les autres paradigmes d'apprentissage automatique</a>
+        <a class="js-scroll-trigger" href="#benefices">Différence entre apprentissage par renforcement et les autres
+          paradigmes d'apprentissage automatique</a>
       </li>
 
       <li class="sidebar-nav-item">
@@ -117,7 +118,7 @@
       </div>
     </div>
   </section>
-<!-- Introduction -->
+  <!-- Introduction -->
 
   <!-- missions -->
   <section class="content-section" style="background-color: #f2b604;" id="important">
@@ -170,59 +171,76 @@
     </div>
   </section>
 
-    <section class="content-section" style="background-color: #f2b604;" id="important">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg-10 mx-auto" style="text-align: justify">
-            <p class="lead mb-5">
-  Il y a cinq éléments associés à l'apprentissage par renforcement:
+  <section class="content-section" style="background-color: #f2b604;" id="important">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto" style="text-align: justify">
+          <p class="lead mb-5">
+            Il y a cinq éléments associés à l'apprentissage par renforcement:
 
-  <ul>
-    <li><b>Un agent </b>est le composant principal et le décideur dans l'environnement d'apprentissage par
-      renforcement.</li>
-    <li><b>L'environnement </b>est la zone environnante, ce que l'agent a pour objectif de réaliser.</li>
-    <li> <b>Un état: </b> c’est la représentation privée de l’environnement, c’est-à-dire les
-      données que
-      l’environnement utilise pour choisir l’état suivant et le récompenser. L'état de l'environnement n'est
-      généralement pas visible pour l'agent, même s'il est visible, il peut contenir des informations non pertinentes.</li>
-    <li> <b>Actions</b>, qui sont les tâches effectuées par l'agent dans un environnement.</li>
-    <li><b>La récompense</b>, est un signal de retour scalaire indiquant le niveau de performance de l'agent au pas à
-      l’instant t.</li>
-  </ul>
-            </p>
-    <p class="lead mb-5">Ainsi, l’idée principale de RL se résume par un environnement qui représente le monde extérieur pour l’agent et un agent
-    qui prend des actions en se basant sur une récompense pour son action et
-    une information sur son nouvel état. Le bon fonctionnement de cet agent consiste à maximiser la somme attendue des récompenses.</p>
-            </div>
-            </div>
-            </div>
-    </section>
-  
+            <ul class="lead mb-5">
+              <li><b>Un agent </b>est le composant principal et le décideur dans l'environnement d'apprentissage par
+                renforcement.</li>
+              <li><b>L'environnement </b>est la zone environnante, ce que l'agent a pour objectif de réaliser.</li>
+              <li> <b>Un état: </b> c’est la représentation privée de l’environnement, c’est-à-dire les
+                données que
+                l’environnement utilise pour choisir l’état suivant et le récompenser. L'état de l'environnement n'est
+                généralement pas visible pour l'agent, même s'il est visible, il peut contenir des informations non
+                pertinentes.</li>
+              <li> <b>Actions</b>, qui sont les tâches effectuées par l'agent dans un environnement.</li>
+              <li><b>La récompense</b>, est un signal de retour scalaire indiquant le niveau de performance de l'agent
+                au pas à
+                l’instant t.</li>
+            </ul>
+          </p>
+          <p class="lead mb-5">Ainsi, l’idée principale de RL se résume par un environnement qui représente le monde
+            extérieur pour l’agent et un agent
+            qui prend des actions en se basant sur une récompense pour son action et
+            une information sur son nouvel état. Le bon fonctionnement de cet agent consiste à maximiser la somme
+            attendue des récompenses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="content-section bg-light" id="benefices">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto" style="text-align: justify">
-          <h2 align="center"> Différence entre apprentissage par renforcement et les autres paradigmes d'apprentissage automatique </h2>
-            
-          <p class="lead mb-5">Comme l’on a déjà expliqué dans les paragraphes précédentes, en RL il n'y a pas de supervision, seulement un signal de
-          récompense qui indique à l'agent si son action a été bonne ou mauvaise. Les réactions de l’environnement peuvent être
-          différées sur plusieurs intervalles de temps, ce n’est pas nécessairement instantané, par exemple. pour la tâche
-          d'atteindre un objectif dans un monde en grille, le retour d'informations peut être à la fin lorsque l'agent atteint
-          l'objectif. L’agent peut passer un certain temps à explorer et à errer dans l’environnement jusqu’à ce qu’il atteigne
-          finalement l’objectif au bout d’un moment de réaliser quelles ont été les bonnes et les mauvaises actions qu’il a
-          prises.</p>
+          <h2 align="center"> Différence entre apprentissage par renforcement et les autres paradigmes d'apprentissage
+            automatique </h2>
 
-          <p class="lead mb-5">Contrairement à l’apprentissage supervisé où nous avons un jeu de données décrivant l'environnement de l'algorithme et
-          les bonnes réponses ou actions à faire face à une situation spécifique. L'algorithme tente de généraliser à partir de
-          ces données à de nouvelles situations.</p>
+          <p class="lead mb-5">Comme l’on a déjà expliqué dans les paragraphes précédentes, en RL il n'y a pas de
+            supervision, seulement un signal de
+            récompense qui indique à l'agent si son action a été bonne ou mauvaise. Les réactions de l’environnement
+            peuvent être
+            différées sur plusieurs intervalles de temps, ce n’est pas nécessairement instantané, par exemple. pour la
+            tâche
+            d'atteindre un objectif dans un monde en grille, le retour d'informations peut être à la fin lorsque
+            l'agent atteint
+            l'objectif. L’agent peut passer un certain temps à explorer et à errer dans l’environnement jusqu’à ce
+            qu’il atteigne
+            finalement l’objectif au bout d’un moment de réaliser quelles ont été les bonnes et les mauvaises actions
+            qu’il a
+            prises.</p>
 
-          <p class="lead mb-5">En RL, les données ne sont pas I.I.D (indépendantes et identiquement distribuées). L'agent peut passer du temps dans
-          une certaine partie de l'environnement et ne pas voir d'autres parties pouvant être intéressantes pour apprendre le
-          comportement optimal. Donc, le temps compte vraiment, l'agent doit explorer à peu près toutes les parties de
-          l'environnement pour pouvoir prendre les bonnes mesures.</p>
+          <p class="lead mb-5">Contrairement à l’apprentissage supervisé où nous avons un jeu de données décrivant
+            l'environnement de l'algorithme et
+            les bonnes réponses ou actions à faire face à une situation spécifique. L'algorithme tente de généraliser à
+            partir de
+            ces données à de nouvelles situations.</p>
 
-          <p class="lead mb-5">L’agent influence l’environnement par ses actions qui, à leur tour, affectent les données ultérieures qu’il reçoit de
-          l’environnement, c’est un processus d’apprentissage actif.</p>
+          <p class="lead mb-5">En RL, les données ne sont pas I.I.D (indépendantes et identiquement distribuées).
+            L'agent peut passer du temps dans
+            une certaine partie de l'environnement et ne pas voir d'autres parties pouvant être intéressantes pour
+            apprendre le
+            comportement optimal. Donc, le temps compte vraiment, l'agent doit explorer à peu près toutes les parties
+            de
+            l'environnement pour pouvoir prendre les bonnes mesures.</p>
+
+          <p class="lead mb-5">L’agent influence l’environnement par ses actions qui, à leur tour, affectent les
+            données ultérieures qu’il reçoit de
+            l’environnement, c’est un processus d’apprentissage actif.</p>
 
         </div>
       </div>
@@ -383,6 +401,7 @@
               </span>
             </span>
             <img class="img-fluid" src="img/portfolio-5.jpg" alt="">
+
           </a>
         </div>
         <div class="col-lg-6">
@@ -408,76 +427,70 @@
   <!-- Call to Action -->
   <section class="content-section bg-primary text-white" id="formation">
     <div class="container text-center">
-      <h2 class="mb-4">Quelles sont les aptitudes et les compétences à avoir pour devenir un Data Scientist</h2>
+      <h2 class="mb-4">Les Success Stories de RL</h2>
       <div class="col-lg-10 mx-auto" style="text-align: justify">
+        <br>
+        <br>
+        <h4>AlphaGo Zero</h4>
         <p class="lead mb-5">
-          Les data Scientist sont très scolarisés, 88% ont au moins une maîtrise et 46% ont un doctorat, et bien
-          qu’il existe des exceptions notables, une formation très poussée est généralement nécessaire pour développer
-          les
-          connaissances nécessaires pour devenir un data Scientist. Pour devenir data Scientist, vous pouvez obtenir un
-          baccalauréat en informatique, en sciences sociales, en sciences physiques et en statistique. Les domaines
-          d'études les
-          plus courants sont les mathématiques et la statistique (32%), suivis par l'informatique (19%) et le génie
-          (16%). Un
-          diplôme dans l'un de ces cours vous donnera les compétences dont vous avez besoin pour traiter et analyser
-          des données
-          volumineuses.
+          AlphaGo Zero est un système informatique développé par Google DeepMind qui permet de jouer l'ancien jeu
+          chinois de Go. Le jeu de Go commence
+          par un plateau vide. Chaque joueur dispose d’une réserve illimitée de pièces (appelées pierres), l’une
+          prenant les
+          pierres noires, l’autre prenant les blanches. L’objectif principal du jeu est d’utiliser vos pierres pour
+          former des
+          territoires en entourant les zones vacantes du plateau. Il est également possible de capturer les pierres de
+          votre
+          adversaire en les entourant complètement.
         </p>
+        <p class="lead mb-5">
+          Les versions précédentes d'AlphaGo avaient été initialement formées à des milliers de jeux amateurs et
+          professionnels
+          pour apprendre à jouer à Go. AlphaGo Zero ignore cette étape et apprend à jouer simplement en jouant contre
+          elle-même,
+          à partir de jeux complètement aléatoires. Ce faisant, il a rapidement dépassé le niveau de jeu humain et a
+          vaincu la
+          version d'AlphaGo précédemment vaincue par un champion, par 100 à 0.
+        </p>
+        <div class="content-section-heading text-center">
+          <img src="./img/1_4mKpnIdFqIr8D7mmOfnC-A.gif" align="center">
+        </div>
+        <br>
+        <br>
 
+        <h4>Deep RL appliqué à la robotique</h4>
         <p class="lead mb-5">
-          La plupart qui choisissent ce métier travaille avec l'un ou les trois langages de programmation suivants:
-          Python, C++,
-          et R. Toutefois l'utilisation de Java, et Perl sont possibles. Ces langages sont les piliers de la
-          programmation
-          Machine Learning, une programmation riche par ces multitudes d'algorithmes tel que l'arbre de décisions,et
-          les k plus
-          proches voisins. L'utilisation de ces algorithmes est assez simple, et ne nécessite pas une connaissance
-          préalable de
-          la théorie conduisant à leur construction. Il suffit de savoir l'algorithme optimal pour une situation
-          donnée.
-        </p>
-        <p class="lead mb-5">
-          L'algèbre linéaire est présent dans la construction de la plupart des algorithmes, si une entreprise décide
-          de
-          s'aventurer dans l'implémentation de leurs propres méthodes, le Data Scientist doit être près à partager son
-          expertise
-          en mathématiques, d'où la nécessité d'avoir une certaine compréhension du domaine.
-        </p>
-        <p class="lead mb-5">
-          Hadoop est un milieu de développement en Machine Learning, il est l'un des plus importantes plateformes
-          orientées
-          traitement de données, Pig, Hive, et Amazon C3 sont aussi utilisables, et augmentent la chance du Data
-          Scientist de
-          décrocher un poste, et de se démarquer des autres.
-        </p>
+          Encore avec Deepmind qui a également utilisé l'apprentissage par renforcement profond pour simuler le
+          comportement de locomotion sur les modèles de simulation de Mujoco.
+          L'agent reçoit la proprioception et une vision simplifiée pour percevoir l'environnement.
 
-        <p class="lead mb-5">
-          La gestion de données est l'une des plus importantes fondations en Data Science, Les données sont dans la
-          plupart des
-          cas des informations non compréhensibles par la machine, une transformation, s'avère dans la majorité des
-          cas,
-          nécessaire afin de les stocker, une fois cette opération est effectuée, il faut gérer les bases de données,
-          d'où
-          l'importance d'avoir des connaissances dans la gestion des bases de données soit à travers des connaissances
-          en SQL,
-          soit la connaissance d’autres outils permettant de gérer des bases sous format NoSQL. De plus, il est
-          impératif que le
-          Data Scientist élimine les données redondante, et le biais, et traite les cas où des données sont manquantes.
-          Par
-          ailleurs, des compétences logicielles sont les bienvenue, afin de diriger le développement et d'intégrer des
-          fonctionnalités faisant appelle aux compétences en Machine Learning.
+          L'agent apprend à courir, à sauter, à s'accroupir et à grimper à travers des tentatives d'essais incessantes
+          et à
+          apprendre de ses erreurs.
         </p>
-        <p class="lead mb-5">
-          Un Data Scientist doit avoir une vision globale de l'industrie afin de traiter les données selon le besoin de
-          l’entreprise dans laquelle il travaille, il doit être curieux, capable de se poser des questions, et n'étant
-          pas
-          effrayé de découvrir des nouveaux domaines. Enfin, un esprit créatif, et la communication lui accorde la
-          possibilité de
-          communiquer ses découverts, et de présenter ses exploits révolutionnaires.
-        </p>
+        <div class="content-section-heading text-center">
+          <img src="./img/1_AaMG88iUmYbH36oElFN6Xg.gif" align="center">
+        </div>
 
+        <br>
+        <br>
+
+        <h4>Deep Q-Network appliqué aux jeux d’Atari</h4>
+        <p class="lead mb-5">
+          DeepMind a réalisé une avancée décisive dans le monde de l'apprentissage par renforcement à la fin de l’année 2013. En
+          utilisant l'apprentissage par renforcement profond DQN, ils ont mis en place un système capable d'apprendre à jouer à
+          de nombreux jeux Atari classiques avec des performances humaines (et parfois surhumaines). Le programme informatique
+          n'a jamais vu ce jeu auparavant et ne connaît pas les règles. Il apprend par renforcement en profondeur à maximiser son
+          score en prenant uniquement en compte les pixels et le score du jeu.
+
+        </p>
+        <div class="content-section-heading text-center">
+          <img src="./img/RashFlippantIbadanmalimbe-size_restricted.gif" align="center">
+        </div>
 
       </div>
+
+    </div>
     </div>
   </section>
   <section class="content-section" style="background-color: #f2b604;" id="conclusion">
