@@ -45,23 +45,26 @@
         <a class="js-scroll-trigger" href="#benefices">Différence entre apprentissage par renforcement et les autres
           paradigmes d'apprentissage automatique</a>
       </li>
-
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#missions">Les principales missions du Data Scientist</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#class-ds">La place du Data Scientist dans l’organisation</a>
+        <a class="js-scroll-trigger" href="#important2">Le processus d'apprentissage du renforcement</a>
       </li>
 
+
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#Pourquoi">Pourquoi le Data Scientist est-il important ?</a>
+        <a class="js-scroll-trigger" href="#missions">Les Markovs Decision Processes</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#formation">Quelles sont les aptitudes et les compétences à avoir pour
-          devenir un Data Scientist</a>
+        <a class="js-scroll-trigger" href="#class-ds">Les différents approches de Reinforcement Learning</a>
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#Pourquoi">Les Success Stories de RL</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#conclusion">Conclusion et Bibliographie</a>
+        <a class="js-scroll-trigger" href="#Conclusion">Conclusion</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="">Bibliographie</a>
       </li>
     </ul>
   </nav>
@@ -69,8 +72,7 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1" style="color: ivory; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Qu'est-ce
-        que l'apprentissage par renforcement? Tout ce que vous devez savoir</h1>
+      <h1 class="mb-1" style="color: ivory; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Introduction à l'Apprentissage par Renforcement </h1>
       <h3 class="mb-5">
         <em></em>
       </h3>
@@ -79,6 +81,7 @@
   </header>
 
   <!-- Introduction -->
+
   <section class="content-section bg-light" id="Introduction">
     <div class="container text-center">
       <div class="row">
@@ -121,11 +124,12 @@
   <!-- Introduction -->
 
   <!-- missions -->
-  <section class="content-section" style="background-color: #f2b604;" id="important">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto" style="text-align: justify">
-          <h2 align="center">Quésaco l’apprentissage par renforcement?</h2>
+
+            <section class="callout" id="important">
+              <div class="container text-center">
+                <h2 class="mx-auto mb-5">Quésaco l’apprentissage par renforcement?</h2>
+              </div>
+              <div class="col-lg-10 mx-auto" style="text-align: justify">
           <p class="lead mb-5">
             L’apprentissage par renforcement désigne à la fois un problème d’apprentissage et un sous-domaine du
             Machine Learning.
@@ -157,47 +161,6 @@
             erreurs et récompense différée - sont les deux caractéristiques distinctives les plus importantes de
             l'apprentissage
             par renforcement.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <img src="img/reinforcement-learning-fig1-700.jpg" align="center">
-
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section" style="background-color: #f2b604;" id="important">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto" style="text-align: justify">
-          <p class="lead mb-5">
-            Il y a cinq éléments associés à l'apprentissage par renforcement:
-
-            <ul class="lead mb-5">
-              <li><b>Un agent </b>est le composant principal et le décideur dans l'environnement d'apprentissage par
-                renforcement.</li>
-              <li><b>L'environnement </b>est la zone environnante, ce que l'agent a pour objectif de réaliser.</li>
-              <li> <b>Un état: </b> c’est la représentation privée de l’environnement, c’est-à-dire les
-                données que
-                l’environnement utilise pour choisir l’état suivant et le récompenser. L'état de l'environnement n'est
-                généralement pas visible pour l'agent, même s'il est visible, il peut contenir des informations non
-                pertinentes.</li>
-              <li> <b>Actions</b>, qui sont les tâches effectuées par l'agent dans un environnement.</li>
-              <li><b>La récompense</b>, est un signal de retour scalaire indiquant le niveau de performance de l'agent
-                au pas à
-                l’instant t.</li>
-            </ul>
-          </p>
-          <p class="lead mb-5">Ainsi, l’idée principale de RL se résume par un environnement qui représente le monde
-            extérieur pour l’agent et un agent
-            qui prend des actions en se basant sur une récompense pour son action et
-            une information sur son nouvel état. Le bon fonctionnement de cet agent consiste à maximiser la somme
-            attendue des récompenses.</p>
         </div>
       </div>
     </div>
@@ -247,185 +210,171 @@
     </div>
   </section>
   <!-- missions -->
+
+  <section class="content-section" id="important2">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto" style="text-align: justify">
+          <h2 align="center">Le processus d'apprentissage du renforcement</h2>
+          <p class="lead mb-5">
+            Il y a cinq éléments associés à l'apprentissage par renforcement:
+
+            <ul class="lead mb-5">
+              <li><b>Un agent </b>est le composant principal et le décideur dans l'environnement d'apprentissage par
+                renforcement.</li>
+              <li><b>L'environnement </b>est la zone environnante, ce que l'agent a pour objectif de réaliser.</li>
+              <li> <b>Un état: </b> c’est la représentation privée de l’environnement, c’est-à-dire les
+                données que
+                l’environnement utilise pour choisir l’état suivant et le récompenser. L'état de l'environnement n'est
+                généralement pas visible pour l'agent, même s'il est visible, il peut contenir des informations non
+                pertinentes.</li>
+              <li> <b>Actions</b>, qui sont les tâches effectuées par l'agent dans un environnement.</li>
+              <li><b>La récompense</b>, est un signal de retour scalaire indiquant le niveau de performance de l'agent
+                au pas à
+                l’instant t.</li>
+            </ul>
+          </p>
+
+          <div class="content-section-heading text-center">
+            <img src="img/reinforcement-learning-fig1-700.jpg" align="center">
+          </div>
+
+          <br>
+          <p class="lead mb-5">Ainsi, l’idée principale de RL se résume par un environnement qui représente le monde
+            extérieur pour l’agent et un agent
+            qui prend des actions en se basant sur une récompense pour son action et
+            une information sur son nouvel état. Le bon fonctionnement de cet agent consiste à maximiser la somme
+            attendue des récompenses.</p>
+
+          <p class="lead mb-5">
+            Pour une meilleure compréhension du processus d'apprentissage par renforcement, imaginons un agent
+            apprenant à jouer à Mr Pacman comme exemple concret. Le processus d'apprentissage par renforcement
+            (RL) peut être modélisé comme une boucle qui fonctionne comme ceci:
+
+            <ul class="lead mb-5">
+              <li>Notre agent reçoit l'état S0 de l'environnement (Dans notre cas, nous recevons la première image de
+                notre jeu (état) de
+                Pacman(environnement))</li>
+              <li>Sur la base de cet état S0, l'agent effectue une action A0 (notre agent se déplacera à droite,
+                gauche, haut ou bas).</li>
+              <li>L'environnement passe dans un nouvel état S1 (nouvelle trame)</li>
+              <li>L'environnement donne une récompense R1 à l'agent (mange un bonus: +1)</li>
+            </ul>
+            <p class="lead mb-5">
+              Cette boucle RL génère une séquence d’états, d’actions et de récompenses.
+
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <section class="content-section bg-primary text-white text-center" id="missions">
     <div class="container">
 
       <div class="content-section-heading">
-        <h2 class="mb-5">Les principales missions du Data Scientist</h2>
+        <h2 class="mb-5">Les Markovs Decision Processes</h2>
       </div>
       <div class="col-lg-10 mx-auto" style="text-align: justify">
-        <p class="lead mb-5"></p>
-        <p class="lead mb-5"> </p>
+        <p class="lead mb-5">Toute tâche d'apprentissage de renforcement avec un ensemble d'états, d'actions et de
+          récompenses, qui suit la
+          propriété de Markov, est un processus de décision de Markov.
+          Formellement parlant, un processus de décision de Markov est un processus de cinq tuple.
+          composé de:
+
+          <ul class="lead mb-5">
+            <li>Un ensemble des états de Markov</li>
+            <li>Un ensemble fini des états qui peuvent être prise par l'agent</li>
+            <li>Les probabilités de transition d'état</li>
+            <li>Un ensemble de récompenses</li>
+            <li>Un facteur d'escompte</li>
+          </ul>
+        </p>
+        <p class="lead mb-5">La figure suivante illustre un Exemple de MDP simple avec trois états représentées par les
+          cercles verts et deux actions en cercles orange), avec deux récompenses illustrées par les flèches
+          oranges. </p>
       </div>
     </div>
   </section>
   <section class="content-section" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
-        <img src="./img/model.png" align="center">
-
+        <img src="./img/state_diagram.PNG" align="center">
       </div>
     </div>
   </section>
 
   <!-- Callout -->
-  <section class="callout" id="class-ds">
+  <section class="content-section" style="background-color: #f2b604;" id="class-ds">
     <div class="container text-center">
-      <h2 class="mx-auto mb-5">La place du Data Scientist dans l’organisation</h2>
+      <h2 class="mx-auto mb-5">Les différents approches de Reinforcement Learning</h2>
     </div>
     <div class="col-lg-10 mx-auto" style="text-align: justify">
-      <p class="lead mb-5">Pas évident pour le Data scientist, à la croisée de plusieurs métiers, d’avoir une place
-        bien définie dans
-        l’organisation de l’entreprise.</p>
-      <p class="lead mb-5">Selon la société et surtout le service qui pilote le projet big data de l’entreprise, il
-        peut être rattaché à la
-        direction marketing, à la direction des systèmes d’information, ou bien même à la direction financière.
-        Le métier de Data Scientist combine en gros trois fonctions différentes : analyste statisticien, informaticien
-        programmeur et manager.</p>
-      <p class="lead mb-5">Ce professionnel est en relation constante avec d'autres data scientists ou des data miners
-        (spécialistes du Data
-        Le métier de Data Scientist combine en gros trois fonctions différentes : analyste statisticien, informaticien
-        programmeur et manager.</p>
-      <p class="lead mb-5">Ce professionnel est en relation constante avec d'autres data scientists ou des data miners
-        Warehouse), le directeur général, le responsable de production, le directeur business analyse, le directeur des
-        systèmes d'information ou le directeur des études pour qui il rédige régulièrement des rapports. Le reporting
-        est
-        journalier, hebdomadaire ou mensuel selon la taille de la structure.</p>
-      <p class="lead mb-5">Il est amené à croiser les informations avec les différents départements : direction
-        commerciale, direction financière
-        et direction juridique et à tenir compte des contraintes externes liées aux prestataires de services, aux
-        intervenants,
-        aux prospects, aux consultants informatiques, ERP et MOA.</p>
-      <p class="lead mb-5">La méthode de travail agile est privilégiée. Cela passe notamment par la mise en place d'un
-        tableau de bord des
-        demandes, évoluant d'un état à un autre jusqu'à leur résolution finale. Par ailleurs, les data scientists
-        mettent à
-        disposition des équipes opérationnelles des outils de visualisation qui donnent un aperçu plus intuitif des
-        données
-        concernées. Sur cette base, ils créent des algorithmes de recommandation pour améliorer la navigation ou
-        répondre aux
-        demandes de nos clients.</p>
+
+      <p class="lead mb-5">Il existe deux familles d’approches pour résoudre un problème d’apprentissage par
+        renforcement.
+        Celles-ci sont les méthodes basées sur un modèle et les méthodes sans modèle qui eux même se divisent en deux
+        sous parties: policy based methods et les value based methods.</p>
+    </div>
+    </section>
+
+        <section class="content-section" id="portfolio">
+          <div class="container">
+            <div class="content-section-heading text-center">
+              <img src="./img/u.png" align="center">
+        
+            </div>
+          </div>
+        </section>
+  <section class="content-section" style="background-color: #f2b604;" id="class-ds">
+    <div class="container text-center">
+      <div class="col-lg-10 mx-auto" style="text-align: justify">
+      <h4>Value based methods:</h4>
+      <p class="lead mb-5">
+        Dans RL basé sur la valeur, l’objectif est d’optimiser la fonction de valeur V (s).
+
+        La fonction de valeur est une fonction qui nous indique la récompense future maximale attendue par l'agent pour
+        chaque
+        état.
+
+        La valeur de chaque état correspond au montant total de la récompense qu'un agent peut s'attendre à accumuler à
+        l'avenir, à partir de cet état. </p>
+        <div class="content-section-heading text-center">
+          <img src="./img/0_kvtRAhBZO-h77Iw1_.png" align="center">
+        </div>
+        <br>
+        <p class="lead mb-5">
+        L'agent utilisera cette fonction de valeur pour sélectionner l'état à choisir à chaque étape en prenant l'état
+        avec la
+        plus grande valeur.
+      </p>
+
+      <h4>Policy Based methods</h4>
+      <p class="lead mb-5">Dans la RL basée sur des règles, nous souhaitons optimiser directement la fonction de règles
+        π (s) (policy function)
+        sans utiliser de fonction de valeur.
+
+        Nous apprenons une fonction “policy” qui nous permet de mapper chaque état sur la meilleure action
+        correspondante.
+      </p>
+
+      <h4>Model based methods:</h4>
+      <p class="lead mb-5">
+        l'agent essaie d'apprendre un modèle du fonctionnement de l'environnement à partir de ses observations, puis
+        planifie
+        une solution à l'aide de ce modèle.
+
+        Le problème de cette méthode est que chaque environnement nécessitera une représentation de modèle différente.
+
+      </p>
+</div>
     </div>
   </section>
-  <img src="./img/compl.png" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;">
-  <!-- Portfolio -->
-  <section class="content-section" id="Pourquoi">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h2 class="mb-5">Pourquoi le Data Scientist est-il important ?</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Soutenir les managers pour prendre des meilleures décisions</h2>
-                <p class="mb-0">Un data scientist expérimenté occupera forcément le rôle d’un conseiller stratégique
-                  aux services des décideurs de
-                  l’entreprise au sein de laquelle il travaille. Ceci en assurant que son staff veillera à bien
-                  communiquer et démontrer
-                  leurs performances analytiques dans le but d’améliorer la prise de décision dans toute
-                  l’organisation.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Traduire convenablement les besoins en objectifs</h2>
-                <p class="mb-0">
-                  Le data scientist examine et explore les données de l’entreprise afin de prescrire et recommander des
-                  actions à
-                  réaliser au sein de l’entreprise visant à améliorer ses performances, à engager plus les clients dans
-                  le but ultime
-                  d’augmenter la rentabilité de l’entreprise.
 
-                </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Challenger ses collaborateurs pour adopter les «best practises» dans leur travail</h2>
-                <p class="mb-0">
-                  Un data scientist forme les personnels de l’entreprise sur les
-                  technologies utilisées dans la réalisation de la chaîne de valeur. Il prépare ses collaborateurs pour
-                  le succès en les
-                  montrant par ses études et ses analyses l’utilisation effective des technologies permettant
-                  d’extraire de la valeur
-                  ajoutée et de faire évoluer les activités de l’entreprise.
-                </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-6.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Identifier les opportunités</h2>
-                <p class="mb-0">
-                  En interagissant avec les différents acteurs de l’entreprises, le data scientist étudie le système
-                  existant d’analyse
-                  de données afin de développer des méthodes supplémentaires et/ou des algorithmes analytiques plus
-                  adaptés aux besoins
-                  de ces clients. Un tel travail exige un traitement en continu des données issues des systèmes de
-                  l’entreprise.
-                </p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Prise de décision axée sur les données</h2>
-                <p class="mb-0">Les data scientist créent des modèles permettant à extraire des informations
-                  pertinentes de sources de données variées.
-                  A partir des modèles réalisés, ils seront capables de mieux comprendre les activités clés de leurs
-                  clients et les aider
-                  à trouver le chemin optimal qui apporte plus de valeurs et fait évoluer leur chiffre d’affaires.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-5.jpg" alt="">
-
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Processus de recrutement amélioré</h2>
-                <p class="mb-0" font-size="5px">Avec les
-                  données disponibles sur les réseaux sociaux, dans les sites de recherche d’emploi et dans les bases
-                  de données de
-                  l’entreprise, les data scientist réalisent des modèles permettant à partir des données collectées de
-                  trouver et rapidement le candidat adapté aux besoins de l’entreprise. Ceci permettra de réduire les
-                  dépenses liées aux processus de recrutement.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Call to Action -->
-  <section class="content-section bg-primary text-white" id="formation">
+  <section class="content-section bg-primary text-white" id="Pourquoi">
     <div class="container text-center">
       <h2 class="mb-4">Les Success Stories de RL</h2>
       <div class="col-lg-10 mx-auto" style="text-align: justify">
@@ -477,10 +426,14 @@
 
         <h4>Deep Q-Network appliqué aux jeux d’Atari</h4>
         <p class="lead mb-5">
-          DeepMind a réalisé une avancée décisive dans le monde de l'apprentissage par renforcement à la fin de l’année 2013. En
-          utilisant l'apprentissage par renforcement profond DQN, ils ont mis en place un système capable d'apprendre à jouer à
-          de nombreux jeux Atari classiques avec des performances humaines (et parfois surhumaines). Le programme informatique
-          n'a jamais vu ce jeu auparavant et ne connaît pas les règles. Il apprend par renforcement en profondeur à maximiser son
+          DeepMind a réalisé une avancée décisive dans le monde de l'apprentissage par renforcement à la fin de l’année
+          2013. En
+          utilisant l'apprentissage par renforcement profond DQN, ils ont mis en place un système capable d'apprendre à
+          jouer à
+          de nombreux jeux Atari classiques avec des performances humaines (et parfois surhumaines). Le programme
+          informatique
+          n'a jamais vu ce jeu auparavant et ne connaît pas les règles. Il apprend par renforcement en profondeur à
+          maximiser son
           score en prenant uniquement en compte les pixels et le score du jeu.
 
         </p>
@@ -493,7 +446,7 @@
     </div>
     </div>
   </section>
-  <section class="content-section" style="background-color: #f2b604;" id="conclusion">
+  <section class="content-section" style="background-color: #f2b604;" id="Conclusion">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto" style="text-align: justify">
