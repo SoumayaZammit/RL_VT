@@ -21,7 +21,22 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
+<style>
+  .bg-light-custom{
+    background-color: #f5f5f5 !important;
+  }
+  .bg-image-custom{
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("./img/bg-callout.jpg");
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%),
+url("./img/bg-callout.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+  }
+  .large-font{
+font-size: 3rem;
+  }
+</style>
 </head>
 
 <body id="page-top">
@@ -73,7 +88,7 @@
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
       <h1 class="mb-1" style="color: ivory; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Introduction à l'Apprentissage par Renforcement </h1>
-      <h3 class="mb-5">
+      <h3 class="mb-5 large-font">
         <em></em>
       </h3>
     </div>
@@ -82,11 +97,11 @@
 
   <!-- Introduction -->
 
-  <section class="content-section bg-light" id="Introduction">
+  <section class="content-section bg-light-custom" id="Introduction">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto" style="text-align: justify">
-          <h2 align="center">Introduction</h2>
+          <h2 class="mb-5 large-font" align="center">Introduction</h2>
           <p class="lead mb-8">L'idée que nous apprenons en interagissant avec notre environnement est probablement la
             première qui nous vienne à
             l'esprit lorsque nous réfléchissons aux méthodes d’apprentissage. Lorsqu'un enfant joue, agite les bras ou
@@ -113,10 +128,6 @@
             Dans ce rapport, nous explorons une approche informatique pour apprendre de l'interaction. Nous
             explorons tout d’abord les notions mathématiques permettant de modéliser ce type de problèmes
             d'apprentissage.</p>
-
-          <p class="lead mb-5"></p>
-
-          <p class="lead mb-5"></p>
         </div>
       </div>
     </div>
@@ -125,11 +136,11 @@
 
   <!-- missions -->
 
-            <section class="callout" id="important">
-              <div class="container text-center">
-                <h2 class="mx-auto mb-5">Quésaco l’apprentissage par renforcement?</h2>
-              </div>
-              <div class="col-lg-10 mx-auto" style="text-align: justify">
+<section class="content-section bg-image-custom" id="important">
+<div class="container text-center">
+  <div class="row">
+    <div class="col-lg-10 mx-auto" style="text-align: justify">
+      <h2 class="mb-5 large-font" align="center">Quésaco l’apprentissage par renforcement?</h2>
           <p class="lead mb-5">
             L’apprentissage par renforcement désigne à la fois un problème d’apprentissage et un sous-domaine du
             Machine Learning.
@@ -166,11 +177,11 @@
     </div>
   </section>
 
-  <section class="content-section bg-light" id="benefices">
+  <section class="content-section bg-light-custom" id="benefices">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto" style="text-align: justify">
-          <h2 align="center"> Différence entre apprentissage par renforcement et les autres paradigmes d'apprentissage
+          <h2 class="mb-5 large-font" align="center"> Différence entre apprentissage par renforcement et les autres paradigmes d'apprentissage
             automatique </h2>
 
           <p class="lead mb-5">Comme l’on a déjà expliqué dans les paragraphes précédentes, en RL il n'y a pas de
@@ -211,11 +222,11 @@
   </section>
   <!-- missions -->
 
-  <section class="content-section" id="important2">
+<section class="content-section" id="important2" style="background-color: #e0f4f6">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto" style="text-align: justify">
-          <h2 align="center">Le processus d'apprentissage du renforcement</h2>
+          <h2 class="mb-5 large-font" align="center">Le processus d'apprentissage du renforcement</h2>
           <p class="lead mb-5">
             Il y a cinq éléments associés à l'apprentissage par renforcement:
 
@@ -270,11 +281,11 @@
   </section>
 
 
-  <section class="content-section bg-primary text-white text-center" id="missions">
+  <section class="content-section bg-light-custom text-center" id="missions">
     <div class="container">
 
       <div class="content-section-heading">
-        <h2 class="mb-5">Les Markovs Decision Processes</h2>
+        <h2 class="mb-5 large-font">Les Markovs Decision Processes</h2>
       </div>
       <div class="col-lg-10 mx-auto" style="text-align: justify">
         <p class="lead mb-5">Toute tâche d'apprentissage de renforcement avec un ensemble d'états, d'actions et de
@@ -297,7 +308,7 @@
       </div>
     </div>
   </section>
-  <section class="content-section" id="portfolio">
+<section class="content-section bg-light-custom" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
         <img src="./img/state_diagram.PNG" align="center">
@@ -306,9 +317,9 @@
   </section>
 
   <!-- Callout -->
-  <section class="content-section" style="background-color: #f2b604;" id="class-ds">
+<section class="content-section" style="background-color: #b0ddf2;" id="class-ds">
     <div class="container text-center">
-      <h2 class="mx-auto mb-5">Les différents approches de Reinforcement Learning</h2>
+      <h2 class="mb-5 large-font">Les différents approches de Reinforcement Learning</h2>
     </div>
     <div class="col-lg-10 mx-auto" style="text-align: justify">
 
@@ -317,18 +328,13 @@
         Celles-ci sont les méthodes basées sur un modèle et les méthodes sans modèle qui eux même se divisent en deux
         sous parties: policy based methods et les value based methods.</p>
     </div>
-    </section>
-
-        <section class="content-section" id="portfolio">
-          <div class="container">
-            <div class="content-section-heading text-center">
-              <img src="./img/u.png" align="center">
-        
-            </div>
-          </div>
-        </section>
-  <section class="content-section" style="background-color: #f2b604;" id="class-ds">
-    <div class="container text-center">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <img src="./img/d.png" align="center">
+  
+      </div>
+    </div>
+    <div class="container text-center" style="margin-top: 2rem;">
       <div class="col-lg-10 mx-auto" style="text-align: justify">
       <h4>Value based methods:</h4>
       <p class="lead mb-5">
@@ -370,13 +376,14 @@
       </p>
 </div>
     </div>
-  </section>
+    </section>
+
 
 
   <!-- Call to Action -->
-  <section class="content-section bg-primary text-white" id="Pourquoi">
+  <section class="content-section bg-light-custom" id="Pourquoi">
     <div class="container text-center">
-      <h2 class="mb-4">Les Success Stories de RL</h2>
+      <h2 class="mb-5 large-font">Les Success Stories de RL</h2>
       <div class="col-lg-10 mx-auto" style="text-align: justify">
         <br>
         <br>
@@ -446,15 +453,15 @@
     </div>
     </div>
   </section>
-  <section class="content-section" style="background-color: #f2b604;" id="Conclusion">
+<section class="content-section" style="background-color: #f2b604;" id="Conclusion">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto" style="text-align: justify">
-          <h2 align="center">Conclusion</h2>
+          <h2 class="mb-5 large-font" align="center">Conclusion</h2>
           <!-- Ajouter Conclusion  -->
           <!-- -->
           <!-- -->
-          <h2 align="center">Bibliographie</h2>
+          <h2 class="mb-5 large-font" align="center">Bibliographie</h2>
           <p class="lead mb-5">Data Scientist: The Sexiest Job of the 21st Century Harvard Business Review:
             https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century</p>
           <p class="lead mb-5">Métiers Data : mais quel est le rôle du Data Scientist?:
@@ -483,7 +490,7 @@
 
 
   <!-- Footer -->
-  <footer class="footer text-center">
+  <footer class="footer text-center bg-light-custom">
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
