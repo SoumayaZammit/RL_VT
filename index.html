@@ -21,22 +21,24 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-<style>
-  .bg-light-custom{
-    background-color: #f5f5f5 !important;
-  }
-  .bg-image-custom{
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("./img/bg-callout.jpg");
-background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%),
-url("./img/bg-callout.jpg");
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-  }
-  .large-font{
-font-size: 3rem;
-  }
-</style>
+  <style>
+    .bg-light-custom {
+      background-color: #f5f5f5 !important;
+    }
+
+    .bg-image-custom {
+      background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("./img/bg-callout.jpg");
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%),
+        url("./img/bg-callout.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .large-font {
+      font-size: 3rem;
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -61,7 +63,7 @@ font-size: 3rem;
           paradigmes d'apprentissage automatique</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#important2">Le processus d'apprentissage du renforcement</a>
+        <a class="js-scroll-trigger" href="#important2">Le processus d'apprentissage par renforcement</a>
       </li>
 
 
@@ -87,7 +89,8 @@ font-size: 3rem;
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1" style="color: ivory; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Introduction à l'Apprentissage par Renforcement </h1>
+      <h1 class="mb-1" style="color: ivory; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Introduction
+        à l'Apprentissage par Renforcement </h1>
       <h3 class="mb-5 large-font">
         <em></em>
       </h3>
@@ -136,11 +139,11 @@ font-size: 3rem;
 
   <!-- missions -->
 
-<section class="content-section bg-image-custom" id="important">
-<div class="container text-center">
-  <div class="row">
-    <div class="col-lg-10 mx-auto" style="text-align: justify">
-      <h2 class="mb-5 large-font" align="center">Quésaco l’apprentissage par renforcement?</h2>
+  <section class="content-section bg-image-custom" id="important">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto" style="text-align: justify">
+          <h2 class="mb-5 large-font" align="center">Quésaco l’apprentissage par renforcement?</h2>
           <p class="lead mb-5">
             L’apprentissage par renforcement désigne à la fois un problème d’apprentissage et un sous-domaine du
             Machine Learning.
@@ -181,7 +184,8 @@ font-size: 3rem;
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto" style="text-align: justify">
-          <h2 class="mb-5 large-font" align="center"> Différence entre apprentissage par renforcement et les autres paradigmes d'apprentissage
+          <h2 class="mb-5 large-font" align="center"> Différence entre apprentissage par renforcement et les autres
+            paradigmes d'apprentissage
             automatique </h2>
 
           <p class="lead mb-5">Comme l’on a déjà expliqué dans les paragraphes précédentes, en RL il n'y a pas de
@@ -222,7 +226,7 @@ font-size: 3rem;
   </section>
   <!-- missions -->
 
-<section class="content-section" id="important2" style="background-color: #e0f4f6">
+  <section class="content-section" id="important2" style="background-color: #e0f4f6">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto" style="text-align: justify">
@@ -259,7 +263,7 @@ font-size: 3rem;
 
           <p class="lead mb-5">
             Pour une meilleure compréhension du processus d'apprentissage par renforcement, imaginons un agent
-            apprenant à jouer à Mr Pacman comme exemple concret. Le processus d'apprentissage par renforcement
+            apprenant à jouer à Super Mario Bro comme exemple concret. Le processus d'apprentissage par renforcement
             (RL) peut être modélisé comme une boucle qui fonctionne comme ceci:
 
             <ul class="lead mb-5">
@@ -269,12 +273,15 @@ font-size: 3rem;
               <li>Sur la base de cet état S0, l'agent effectue une action A0 (notre agent se déplacera à droite,
                 gauche, haut ou bas).</li>
               <li>L'environnement passe dans un nouvel état S1 (nouvelle trame)</li>
-              <li>L'environnement donne une récompense R1 à l'agent (mange un bonus: +1)</li>
+              <li>L'environnement donne une récompense R1 à l'agent (gagne une pièce ou mange un champignon : +1)</li>
             </ul>
             <p class="lead mb-5">
               Cette boucle RL génère une séquence d’états, d’actions et de récompenses.
-
             </p>
+            <p class="lead mb-5"> Dans le cas épisodique , nous avons un point de départ et un état final comme le cas de Super Mario.
+
+            Contrairement au cas continu, où les tâches continuent indéfiniment comme le cas de stock trading </p>
+
         </div>
       </div>
     </div>
@@ -308,7 +315,7 @@ font-size: 3rem;
       </div>
     </div>
   </section>
-<section class="content-section bg-light-custom" id="portfolio">
+  <section class="content-section bg-light-custom" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
         <img src="./img/state_diagram.PNG" align="center">
@@ -317,7 +324,7 @@ font-size: 3rem;
   </section>
 
   <!-- Callout -->
-<section class="content-section" style="background-color: #b0ddf2;" id="class-ds">
+  <section class="content-section" style="background-color: #b0ddf2;" id="class-ds">
     <div class="container text-center">
       <h2 class="mb-5 large-font">Les différents approches de Reinforcement Learning</h2>
     </div>
@@ -331,52 +338,57 @@ font-size: 3rem;
     <div class="container">
       <div class="content-section-heading text-center">
         <img src="./img/d.png" align="center">
-  
+
       </div>
     </div>
     <div class="container text-center" style="margin-top: 2rem;">
       <div class="col-lg-10 mx-auto" style="text-align: justify">
-      <h4>Value based methods:</h4>
-      <p class="lead mb-5">
-        Dans RL basé sur la valeur, l’objectif est d’optimiser la fonction de valeur V (s).
+        <h4>Value based methods:</h4>
+        <p class="lead mb-5">
+          Dans RL basé sur la valeur, l’objectif est d’optimiser la fonction de valeur V (s).
 
-        La fonction de valeur est une fonction qui nous indique la récompense future maximale attendue par l'agent pour
-        chaque
-        état.
+          La fonction de valeur est une fonction qui nous indique la récompense future maximale attendue par l'agent
+          pour
+          chaque
+          état.
 
-        La valeur de chaque état correspond au montant total de la récompense qu'un agent peut s'attendre à accumuler à
-        l'avenir, à partir de cet état. </p>
+          La valeur de chaque état correspond au montant total de la récompense qu'un agent peut s'attendre à accumuler
+          à
+          l'avenir, à partir de cet état. </p>
         <div class="content-section-heading text-center">
           <img src="./img/0_kvtRAhBZO-h77Iw1_.png" align="center">
         </div>
         <br>
         <p class="lead mb-5">
-        L'agent utilisera cette fonction de valeur pour sélectionner l'état à choisir à chaque étape en prenant l'état
-        avec la
-        plus grande valeur.
-      </p>
+          L'agent utilisera cette fonction de valeur pour sélectionner l'état à choisir à chaque étape en prenant
+          l'état
+          avec la
+          plus grande valeur.
+        </p>
 
-      <h4>Policy Based methods</h4>
-      <p class="lead mb-5">Dans la RL basée sur des règles, nous souhaitons optimiser directement la fonction de règles
-        π (s) (policy function)
-        sans utiliser de fonction de valeur.
+        <h4>Policy Based methods</h4>
+        <p class="lead mb-5">Dans la RL basée sur des règles, nous souhaitons optimiser directement la fonction de
+          règles
+          π (s) (policy function)
+          sans utiliser de fonction de valeur.
 
-        Nous apprenons une fonction “policy” qui nous permet de mapper chaque état sur la meilleure action
-        correspondante.
-      </p>
+          Nous apprenons une fonction “policy” qui nous permet de mapper chaque état sur la meilleure action
+          correspondante.
+        </p>
 
-      <h4>Model based methods:</h4>
-      <p class="lead mb-5">
-        l'agent essaie d'apprendre un modèle du fonctionnement de l'environnement à partir de ses observations, puis
-        planifie
-        une solution à l'aide de ce modèle.
+        <h4>Model based methods:</h4>
+        <p class="lead mb-5">
+          l'agent essaie d'apprendre un modèle du fonctionnement de l'environnement à partir de ses observations, puis
+          planifie
+          une solution à l'aide de ce modèle.
 
-        Le problème de cette méthode est que chaque environnement nécessitera une représentation de modèle différente.
+          Le problème de cette méthode est que chaque environnement nécessitera une représentation de modèle
+          différente.
 
-      </p>
-</div>
+        </p>
+      </div>
     </div>
-    </section>
+  </section>
 
 
 
@@ -400,13 +412,11 @@ font-size: 3rem;
           adversaire en les entourant complètement.
         </p>
         <p class="lead mb-5">
-          Les versions précédentes d'AlphaGo avaient été initialement formées à des milliers de jeux amateurs et
-          professionnels
-          pour apprendre à jouer à Go. AlphaGo Zero ignore cette étape et apprend à jouer simplement en jouant contre
-          elle-même,
-          à partir de jeux complètement aléatoires. Ce faisant, il a rapidement dépassé le niveau de jeu humain et a
-          vaincu la
-          version d'AlphaGo précédemment vaincue par un champion, par 100 à 0.
+          AlphaGo Zero est un logiciel développé par Google DeepMind qui permet de jouer l'ancien jeu chinois Go.
+          Les versions précédentes d'AlphaGo avaient été initialement formées par des milliers de jeux amateurs et professionnels
+          pour apprendre à jouer à Go. AlphaGo Zero ignore cette étape et apprend à jouer simplement en jouant contre elle-même,
+          à partir de jeux complètement aléatoires. Ce faisant, alphago zero a réussi à vaincre Lee Sedol, joueur professionnel
+          sud-coréen de Go, 4 matchs contre 1 en mars 2016.
         </p>
         <div class="content-section-heading text-center">
           <img src="./img/1_4mKpnIdFqIr8D7mmOfnC-A.gif" align="center">
@@ -417,15 +427,15 @@ font-size: 3rem;
         <h4>Deep RL appliqué à la robotique</h4>
         <p class="lead mb-5">
           Encore avec Deepmind qui a également utilisé l'apprentissage par renforcement profond pour simuler le
-          comportement de locomotion sur les modèles de simulation de Mujoco.
-          L'agent reçoit la proprioception et une vision simplifiée pour percevoir l'environnement.
+          comportement de locomotion sur les modèles de simulation.
+          L'agent dispose d’un ensemble de capteurs virtuels qui lui permettent de percevoir l'environnement.
 
           L'agent apprend à courir, à sauter, à s'accroupir et à grimper à travers des tentatives d'essais incessantes
           et à
           apprendre de ses erreurs.
         </p>
         <div class="content-section-heading text-center">
-          <img src="./img/1_AaMG88iUmYbH36oElFN6Xg.gif" align="center">
+          <img src="./img/deepmind_parkour.0.gif" height=400px width= "500px" align="center">
         </div>
 
         <br>
@@ -453,35 +463,60 @@ font-size: 3rem;
     </div>
     </div>
   </section>
-<section class="content-section" style="background-color: #f2b604;" id="Conclusion">
+
+  <section class="content-section" style="background-color: #1d809f;" id="Conclusion">
     <div class="container text-center">
-      <div class="row">
+
         <div class="col-lg-10 mx-auto" style="text-align: justify">
           <h2 class="mb-5 large-font" align="center">Conclusion</h2>
-          <!-- Ajouter Conclusion  -->
-          <!-- -->
-          <!-- -->
+
+<p class="lead mb-5">Andrew Ng le Co-chairman de Coursera a dit durant l'un de ses keynote speech que "l'enthousiasme et le battage médiatique entourant l'apprentissage par renforcement sont un peu disproportionnés par
+rapport à la valeur économique qu'il crée aujourd'hui. Il est évident que RL est un paradigme d’apprentissage automatique
+dont la soif de données est encore plus important que dans l’apprentissage supervisé. Il est très difficile d'obtenir
+suffisamment de données pour les algorithmes de RL ... il reste encore beaucoup à faire pour traduire cela en business et
+en pratique". </p>
+        <div class="content-section-heading text-center">
+          <img src="./img/Alex.jpg" align="center">
+        </div>
+        <br>
+        <p class="lead mb-5">
+        Alex Irpan, un ingénieur en informatique chez Google, a dit que l'apprentissage par renforcement ne marche qu'en 30% des cas.
+</p>
+
+<p class="lead mb-5">Revenons à nos success stories qu'on a cité. Lors du développement de l'application d'Atari qui est la référence la plus connue en matière d'apprentissage par renforcement, un grand problème a été rencontré: lorsque le nombre d’image par seconde augmente dans le jeu(qui represente le nombre d'état dand le problème d'apprentissage par renforcement), on ne
+parvient pas avec l’RL à toucher le score humain. </p>
+
+<p class="lead mb-5">En addition, Le coût du matériel pour un seul système AlphaGo Zero, a été estimé à 25 millions de dollars. </p>
+<p class="lead mb-5">
+Pareil pour l’application de locomotion de deepmind pour faire apprendre à un robot de marcher cela a pris 6400 heure
+cpu pour la phase d’apprentissage.</p>
+<p class="lead mb-5">
+Avec ces problème de coût, de performance et de temps de calcule, l’rl est visiblement pas encore prête pour être
+traduite en business du coup il faut attendre les prochaines années pour voir où cela pourrait aller. </p>
+
+        </div>
+        </div>
+        </section>
+
+            <section class="content-section" style="background-color: #f2b604;" id="Conclusion">
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col-lg-10 mx-auto" style="text-align: justify">
           <h2 class="mb-5 large-font" align="center">Bibliographie</h2>
-          <p class="lead mb-5">Data Scientist: The Sexiest Job of the 21st Century Harvard Business Review:
-            https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century</p>
-          <p class="lead mb-5">Métiers Data : mais quel est le rôle du Data Scientist?:
-            https://www.datagalaxy.com/blog/metiers-data/data-scientist/</p>
-          <p class="lead mb-5">The Role of the Data Scientist By N. R. Srinivasa Raghavan:
-            http://www.dataversity.net/role-data-scientist/</p>
-          <p class="lead mb-5">The role of a data scientist by Anna Meyer:
-            https://www.robertwalters-usa.com/career-advice/the-role-of-a-data-scientist.html</p>
-          <p class="lead mb-5">Les compétences et le rôle du data analyst, scientist, engineer et architecte data
-            science: https://www.blogdumoderateur.com/metiers-data-regionsjob/</p>
-          <p class="lead mb-5">Fiche métier Data Scientist:
-            https://www.elaee.com/fiches-metiers/fiche-metier-data-scientist</p>
-          <p class="lead mb-5">[Fiche métier] Qu'est-ce qu'un Data Scientist ?:
-            https://www.e-marketing.fr/Thematique/management-1090/Breves/Fiche-metier-est-Data-Scientist-255173.htm#crDoswKIv8FOqI0h.97</p>
-          <p class="lead mb-5">Quelle place pour le data scientist en entreprise ?:
-            http://archives.lesclesdedemain.lemonde.fr/business/quelle-place-pour-le-data-scientist-en-entreprise-_a-56-4686.html</p>
-          <p class="lead mb-5">Data Scientists et Data Engineers, ensemble sinon rien:
-            https://blog.xebia.fr/2018/10/02/data-agile-data-scientists-et-data-engineers-ensemble-sinon-rien/</p>
-          <p class="lead mb-5">Les compétences nécessaires pour dévenir data scientist:
-            https://www.lebigdata.fr/13-competences-necessaires-devenir-data-scientist?fbclid=IwAR3bxYgjvx3w4ojwCNCkwxvv0IwINYpyTtRuxNoT7wUagJlBbwn7PMIzxxc</p>
+          <p class="lead mb-5">UCL Course on RL by David Silver: <br>
+            <a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html">
+              http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html</a></p>
+
+          <p class="lead mb-5">Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto: <br>
+            <a href="http://incompleteideas.net/book/bookdraft2017nov5.pdf">
+              http://incompleteideas.net/book/bookdraft2017nov5.pdf</a></p>
+          <p class="lead mb-5">Reinforcement Learning Demystified: A Gentle Introduction by Mohammad Ashraf: <br>
+            <a href="https://towardsdatascience.com/reinforcement-learning-demystified-36c39c11ec14">
+              https://towardsdatascience.com/reinforcement-learning-demystified-36c39c11ec14</a></p>
+
+          <p class="lead mb-5">An introduction to Reinforcement Learning by Thomas Simonini: <br>
+            <a href="https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419">
+              https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419</a></p>
 
         </div>
       </div>
@@ -530,3 +565,4 @@ font-size: 3rem;
 </body>
 
 </html>
+
